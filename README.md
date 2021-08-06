@@ -91,7 +91,7 @@ controlForm.clearForm();
 ControlForm controlForm = new ControlForm();
 
 controlForm.addForm(binding.edittext1);
-controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableZeroSpace) s -> {
+controlForm.addForm(binding.edittext2, (ControlFormCallBack) s -> { //s is @Nullable
     if (s==null)
         Toast.makeText(MainActivity.this, "null", Toast.LENGTH_SHORT).show();
     else
