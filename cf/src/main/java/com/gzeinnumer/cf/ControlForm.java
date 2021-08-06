@@ -19,6 +19,10 @@ public class ControlForm {
         views.add(view);
     }
 
+    public void addForm(ArrayList<EditText> view) {
+        views.addAll(view);
+    }
+
     public void addForm(EditText view, ControlFormCallBack controlFormCallBack) {
         view.addTextChangedListener(new TextWatcher() {
             @Override
