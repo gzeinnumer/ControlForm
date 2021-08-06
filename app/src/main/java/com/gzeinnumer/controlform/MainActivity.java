@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         ControlForm controlForm = new ControlForm();
 
-        controlForm.addForm(binding.ed1);
-        controlForm.addForm(binding.ed2, new ControlFormCallBack() {
+        controlForm.addForm(binding.edittext1);
+        controlForm.addForm(binding.edittext2, new ControlFormCallBack() {
             @Override
             public void afterTextChanged(@Nullable Editable s) {
                 if (s==null)

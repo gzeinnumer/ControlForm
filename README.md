@@ -41,7 +41,7 @@ allprojects {
 // build.gradle app/module
 dependencies {
   ...
-  implementation 'com.github.gzeinnumer:MyLibUtils:version'
+  implementation 'com.github.gzeinnumer:AndroidFormValidation:version'
 }
 ```
 
@@ -62,11 +62,11 @@ ControlForm controlForm = new ControlForm();
 ```
 * Register Form
 ```java
-controlForm.addForm(binding.ed1);
+controlForm.addForm(binding.edittext1);
 ```
 * Register Form With CallBack
 ```java
-controlForm.addForm(binding.ed2, (ControlFormCallBack) s -> { //s is @Nullable
+controlForm.addForm(binding.edittext2, (ControlFormCallBack) s -> { //s is @Nullable
     if (s==null)
         Toast.makeText(MainActivity.this, "null", Toast.LENGTH_SHORT).show();
     else
@@ -74,13 +74,13 @@ controlForm.addForm(binding.ed2, (ControlFormCallBack) s -> { //s is @Nullable
 });
 
 //or ControlFormCallBackDisableSpace -> Disable Space At First
-controlForm.addForm(binding.ed2, (ControlFormCallBackDisableSpace) s -> {});
+controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableSpace) s -> {});
 
 //or ControlFormCallBackDisableSpace -> Disable Zero At First
-controlForm.addForm(binding.ed2, (ControlFormCallBackDisableZero) s -> {});
+controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableZero) s -> {});
 
 //or ControlFormCallBackDisableSpace -> Disable Zero/Space At First
-controlForm.addForm(binding.ed2, (ControlFormCallBackDisableZeroSpace) s -> {});
+controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableZeroSpace) s -> {});
 ```
 * Clear All Form
 ```java
@@ -90,8 +90,8 @@ controlForm.clearForm();
 ```java
 ControlForm controlForm = new ControlForm();
 
-controlForm.addForm(binding.ed1);
-controlForm.addForm(binding.ed2, (ControlFormCallBackDisableZeroSpace) s -> {
+controlForm.addForm(binding.edittext1);
+controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableZeroSpace) s -> {
     if (s==null)
         Toast.makeText(MainActivity.this, "null", Toast.LENGTH_SHORT).show();
     else

@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
+    android:gravity="top"
     android:padding="16dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/ed1"
+        android:id="@+id/edittext1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="edittext1" />
 
     <EditText
-        android:id="@+id/ed2"
+        android:id="@+id/edittext2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="edittext2" />
 
     <Button
         android:layout_marginTop="16dp"
