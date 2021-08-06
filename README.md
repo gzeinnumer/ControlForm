@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibUtils/blob/master/preview/bg.jpg"/>
+  <img src="https://github.com/gzeinnumer/ControlForm/blob/master/preview/example1.gif" width="300"/>
 </p>
 
 <h1 align="center">
