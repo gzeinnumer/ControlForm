@@ -41,7 +41,7 @@ allprojects {
 // build.gradle app/module
 dependencies {
   ...
-  implementation 'com.github.gzeinnumer:AndroidFormValidation:version'
+  implementation 'com.github.gzeinnumer:ControlForm:version'
 }
 ```
 
