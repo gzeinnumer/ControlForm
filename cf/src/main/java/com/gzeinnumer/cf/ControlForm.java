@@ -139,4 +139,16 @@ public class ControlForm {
             editText.setText(null);
         }
     }
+
+    public void disableAllForm() {
+        for (EditText editText : views) {
+            editText.setEnabled(false);
+        }
+    }
+
+    public void enableAllForm() {
+        for (EditText editText : views) {
+            editText.setEnabled(true);
+        }
+    }
 }

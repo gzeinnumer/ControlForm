@@ -86,6 +86,14 @@ controlForm.addForm(binding.edittext2, (ControlFormCallBackDisableZeroSpace) s -
 ```java
 controlForm.clearForm();
 ```
+* Disable All Form
+```java
+controlForm.disableAllForm();
+```
+* Enable All Form
+```java
+controlForm.enableAllForm();
+```
 * Full Code
 ```java
 ControlForm controlForm = new ControlForm();
@@ -117,6 +125,8 @@ binding.btn.setOnClickListener(new View.OnClickListener() {
 # Version
 - **1.0.0**
   - First Release
+- **1.1.0**
+  - add `disableAllForm()` and `enableAllForm()`
 
 ---
 # Contribution
